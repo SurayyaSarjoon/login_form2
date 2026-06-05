@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    background: linear-gradient(135deg,rgb(149, 172, 200),#00008b);
+    align-items:center;
+    justify-content:center;
+
+}
+
+.login-container{
+    background-color:white;
+    padding:70px;
+    border-radius:5px;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.5);
+}
+
+.login-container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#00008b99;
+}
+
+.input-fields{
+    position:relative;
+    margin-bottom:15px;
+    display:flex;
+}
+
+.input-fields i{
+    position:absolute;
+    top:50%;
+    left:12px;
+    transform:translateY(-50%);
+    color:rgb(78, 78, 227);
+    font-size:14px;
+}
+
+.input-fields input{
+    width:100%;
+    padding:12px 12px 12px 30px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:14px;    
+}
+
+.input-fields input:focus{
+    border:3px solid rgb(74, 74, 201);
+    outline:none;
+    transition:0.3s;
+}
+
+.login-container button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background-color:rgb(107, 160, 212);
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.login-container button:hover{
+    border: 3px solid rgb(74, 74, 201);
+    background-color:rgb(191, 209, 219);
+    color:black;
+    transition:0.3s;
+}
+
+.sign-up{
+    text-align:center;
+    font-size:14px;
+    margin-top:20px;
+}
+
+.sign-up a{
+    text-decoration:none;
+    color:rgb(78, 78, 227);
+}
+
+.sign-up a:hover{
+    text-decoration:underline;
+}
+
+.guest{
+    text-align:center;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.guest a{
+    text-decoration:none;
+    color:rgb(78, 78, 227);
+}
+
+.guest a:hover{
+    text-decoration:underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <form>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <div class="input-fields">
+            <i class="fa-solid fa-user" style="color: rgb(30, 48, 80);"></i>
+            <input type="text" placeholder="user name" id="username" required>
+        </div>
+        
+        <div class="input-fields">
+            <i class="fa-solid fa-lock" style="color: rgb(30, 48, 80);"></i>
+            <input type="password" placeholder="password" id="pass-word" required>
+        </div>
+        
+        <button type="submit">Login</button>
+        
+        <p class="sign-up">Don't have an account? <a href="#">Sign up</a></p>
+        <p class="guest"><a href="#">Use as guest</a></p>
+    </div>
+    </form>
+    
+
+    
+</body>
+</html>
